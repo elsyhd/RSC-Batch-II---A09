@@ -1,0 +1,86 @@
+.institutions-container {
+  font-family: 'Roboto', sans-serif;
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 150px;
+}
+
+.title-institutions {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+
+.title-institutions h2 {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.title-mid h3 {
+  margin: 0 0 1rem;
+  color: #222;
+  font-size: 1.6rem;
+}
+
+.mid-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  grid-gap: 1.5rem;
+  margin-bottom: 38px;
+}
+
+
+.mid {
+  background-color: #FCCDE2;
+  border-radius: 5px;
+  padding: 8px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.mid img {
+  display: block;
+  width: 20px;
+}
+
+
+.mid:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.text-content {
+  color: #222;
+  font-size: 1rem;
+  margin: 0;
+}
+
+
+@media (max-width: 1024px) {
+.institutions-container {
+padding: 80px;
+}
+}
+
+@media (max-width: 768px) {
+.institutions-container {
+padding: 80px 40px;
+}
+
+.mid-list {
+  grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 480px) {
+.institutions-container {
+padding: 40px 1.5rem;
+}
+
+.mid-list {
+  grid-template-columns: 1fr;
+}
+}

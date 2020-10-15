@@ -1,0 +1,33 @@
+footer{
+  max-width: 1366px;
+  height: 60px;
+  width: 100%;
+}
+.line{
+    height: 1px;
+    width: 80%;
+    background-color:#DEE1EC;
+    margin: 0 auto 20px;
+}
+
+.box{
+    height: 100px;
+    width: 200px;
+    margin: 10px auto;
+}
+  
+.box img{
+    width: 190px;
+    height: 47px;
+}
+
+.box p{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+    color: #222222;
+    font-weight: 300;
+    line-height: 18.75px;
+    display: flex;
+}

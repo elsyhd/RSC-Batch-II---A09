@@ -1,0 +1,170 @@
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1336px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.top{
+    background-image: url("../assets/bg.svg");
+    background-size: cover;
+    height: 100vh;
+    padding: 80px;
+} 
+
+.header-content {
+  max-width: 800px;
+  width: 100%;
+}
+
+.container h1 {
+    font-size: 70px;
+    letter-spacing: 15px;
+    margin: 0 0 1rem;
+    color: white;
+}
+
+.container h2 {
+    padding-right: 155px;
+    font-weight: normal;
+    margin: 0 0 1rem;
+    font-size: 25px;
+    color: #f0f0f0;
+}
+
+.btn {
+    margin-top: 25px;
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    background-color: #FF304F;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 0px 7px #C91E0D;
+    opacity: 0.9;
+}
+
+.btn:active {
+    box-shadow: none;
+    position: relative;
+    top: 7px;
+    left: 10px;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+
+@keyframes heartbeat {
+  0%  { transform: scale(1);   }
+  14% { transform: scale(1.1); }
+  28% { transform: scale(1);   }
+  42% { transform: scale(1.1); }
+  70% { transform: scale(1);   }
+}
+
+.btn.header-btn {
+  animation: heartbeat 1s infinite;
+}
+
+.header {
+    background-color: white;
+    border-bottom: 1px #DEE1EC solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.header-left{
+  margin-top: 5px;
+}
+
+.header-right a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.header-right a:hover,
+.header-right a:focus {
+  border-bottom: 4px solid #FF304F;
+}
+
+.header-right a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 20px 40px;
+  }
+
+  .top {
+    padding: 80px 40px;
+  }
+}
+
+@media (max-width: 670px) {
+ .top {
+   text-align: center;
+   padding: 0 10px;
+ }
+
+ .header-content h1 {
+   font-size: 45px;
+   letter-spacing: 5px;
+ }
+
+ .header-content h2 {
+   padding: 0;
+   font-size: 19px;
+ }
+
+ .btn {
+   font-size: 12px;
+   padding: 6px 12px;
+   margin-top: 12px;
+ }
+
+ .header {
+   height: 70px;
+ }
+
+ .header-right {
+   display: none;
+ }
+
+ .header-right a {
+   font-size: 10px;
+   margin: 0 auto;
+ }
+
+ .header-left {
+   align-items: center;
+   margin: 0 auto;
+   padding-top: 5px;
+ }
+
+ 	.corona-container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
